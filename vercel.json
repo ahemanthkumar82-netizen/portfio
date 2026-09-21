@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "buildCommand": "mkdir -p public && cp -R src/main/resources/static/. public/",
+  "outputDirectory": "public"
+}
