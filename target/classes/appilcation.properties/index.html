@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hemanth Kumar A — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Hemanth<span class="logo-dot">.</span>Dev<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="navbar-right">
+      <a href="mailto:ahemanthkumar82@gmail.com?subject=Hello Hemanth!&body=Hi Hemanth, I'd like to connect with you." class="nav-gmail" title="Send me an email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/hemanth-kumar-a-6742ba42b" target="_blank" class="nav-linkedin" title="Visit my LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/ahemanthkumar82-netizen" target="_blank" class="nav-github" title="Visit my GitHub"><i class="fab fa-github"></i></a>
+      <button onclick="openHireModal()" class="nav-cta">Hire Me</button>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="pulse-dot"></span> Available for work</div>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Hemanth Kumar A</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">I craft beautiful, performant web experiences with clean code and modern design. Turning ideas into digital reality.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Projects</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="profile-card">
+        <div class="profile-ring"></div>
+        <div class="profile-avatar">
+          <i class="fas fa-user-astronaut"></i>
+        </div>
+        <div class="floating-badge badge-html"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="floating-badge badge-css"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="floating-badge badge-js"><i class="fab fa-js"></i> JS</div>
+        <div class="floating-badge badge-java"><i class="fab fa-java"></i> Java</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// about me</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a <strong>Frontend Developer</strong> with a passion for building modern, responsive web applications. I specialize in creating seamless user experiences with clean, efficient code.</p>
+          <p>With expertise in both frontend technologies and Java backend development, I bridge the gap between beautiful design and robust functionality.</p>
+          <div class="about-info">
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</div>
+            <div class="info-item"><a href="mailto:ahemanthkumar82@gmail.com" style="color:inherit;text-decoration:none;display:flex;align-items:center;gap:8px;"><i class="fas fa-envelope" style="color:var(--accent-blue)"></i> ahemanthkumar82@gmail.com</a></div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i> B.Sc. Computer Science</div>
+            <div class="info-item"><i class="fas fa-briefcase"></i> Open to Opportunities</div>
+          </div>
+          <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+        </div>
+        <div class="about-cards">
+          <div class="about-card"><i class="fas fa-code"></i><h4>Clean Code</h4><p>Writing maintainable, scalable code following best practices.</p></div>
+          <div class="about-card"><i class="fas fa-mobile-alt"></i><h4>Responsive</h4><p>Pixel-perfect designs that work on every device and screen.</p></div>
+          <div class="about-card"><i class="fas fa-bolt"></i><h4>Performance</h4><p>Optimized applications with fast load times and smooth UX.</p></div>
+          <div class="about-card"><i class="fas fa-database"></i><h4>Full Stack</h4><p>End-to-end development from UI to database architecture.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// skills</span>
+        <h2>Tech Stack</h2>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Loaded via JS/API -->
+        <div class="skill-item"><div class="skill-info"><span>HTML & CSS</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>JavaScript</span><span>50%</span></div><div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Java</span><span>75%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Git & GitHub</span><span>45%</span></div><div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>MySQL</span><span>50%</span></div><div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// projects</span>
+        <h2>Featured Work</h2>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Loaded via JS/API -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contact</span>
+        <h2>Let's Work Together</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Have a project in mind or want to collaborate? I'd love to hear from you. Let's build something amazing together.</p>
+          <div class="contact-links">
+            <a href="mailto:ahemanthkumar82@gmail.com?subject=Hello Hemanth!&body=Hi Hemanth, I'd like to connect with you." class="contact-link"><i class="fas fa-envelope"></i> ahemanthkumar82@gmail.com</a>
+            <a href="https://github.com/ahemanthkumar82-netizen" target="_blank" class="contact-link"><i class="fab fa-github"></i> github.com/ahemanthkumar82-netizen</a>
+            <a href="https://www.linkedin.com/in/hemanth-kumar-a-6742ba42b" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> linkedin.com/in/hemanth-kumar-a</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required/>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required/>
+          </div>
+          <div class="form-group">
+            <input type="url" name="github" placeholder="Your GitHub URL (optional)"/>
+          </div>
+          <div class="form-group">
+            <input type="url" name="linkedin" placeholder="Your LinkedIn URL (optional)"/>
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="nav-logo"><span class="logo-bracket">&lt;</span>Hemanth<span class="logo-dot">.</span>Dev<span class="logo-bracket">/&gt;</span></div>
+        <p>© 2024 Hemanth Kumar A. Built with Java & passion.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/ahemanthkumar82-netizen" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/hemanth-kumar-a-6742ba42b" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:ahemanthkumar82@gmail.com?subject=Hello Hemanth!&body=Hi Hemanth, I'd like to connect with you."><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- HIRE ME MODAL -->
+  <div class="modal-overlay" id="hireModal" onclick="closeHireModal(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeHireModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <span class="section-tag">// let's work</span>
+        <h3>Send an Inquiry</h3>
+        <p>Fill in the details and I'll get back to you within 24 hours.</p>
+      </div>
+      <form class="modal-form" id="hire-form">
+        <div class="modal-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="John Doe" required/>
+          </div>
+          <div class="form-group">
+            <label>Company</label>
+            <input type="text" name="company" placeholder="Acme Inc." required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="john@company.com" required/>
+        </div>
+        <div class="form-group">
+          <label>Project Type</label>
+          <input type="text" name="project" placeholder="e.g. Web App, Portfolio, E-Commerce" required/>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Inquiry</button>
+        <div id="hire-status"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
